@@ -9,11 +9,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var ghostImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        ghostImageView.image = #imageLiteral(resourceName: "Gunther simple")
     }
-
+    
+    @IBAction func shuffleButtonPressed(_ sender: UIButton) {
+        
+        let imageArray = [#imageLiteral(resourceName: "Gunther simple") , #imageLiteral(resourceName: "Gunther simple") , #imageLiteral(resourceName: "Gunther simple") , #imageLiteral(resourceName: "Gunther simple") , #imageLiteral(resourceName: "Gunther simple") , #imageLiteral(resourceName: "Gunther simple")]
+        
+        ghostImageView.image = imageArray.randomElement()
+    }
 
 }
 
