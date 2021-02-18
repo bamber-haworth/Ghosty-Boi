@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     
     @IBAction func shuffleButtonPressed(_ sender: UIButton) {
         
-        let imageArray = [#imageLiteral(resourceName: "image2") , #imageLiteral(resourceName: "image3") ,#imageLiteral(resourceName: "image1")]
+        let imageArray = [#imageLiteral(resourceName: "image2") , #imageLiteral(resourceName: "image3") ,#imageLiteral(resourceName: "image1") , #imageLiteral(resourceName: "Skate") ,#imageLiteral(resourceName: "Beanie"),#imageLiteral(resourceName: "RoboGunther")]
         
         ghostImageView.image = imageArray.randomElement()
         ghostImageView.backgroundColor = UIColor.clear
