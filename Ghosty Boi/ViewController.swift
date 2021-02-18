@@ -14,13 +14,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ghostImageView.image = #imageLiteral(resourceName: "Gunther simple")
+        ghostImageView.backgroundColor = UIColor.white
     }
     
     @IBAction func shuffleButtonPressed(_ sender: UIButton) {
         
-        let imageArray = [#imageLiteral(resourceName: "Gunther simple") , #imageLiteral(resourceName: "Gunther simple") , #imageLiteral(resourceName: "Gunther simple") , #imageLiteral(resourceName: "Gunther simple") , #imageLiteral(resourceName: "Gunther simple") , #imageLiteral(resourceName: "Gunther simple")]
+        let imageArray = [#imageLiteral(resourceName: "image2") , #imageLiteral(resourceName: "image3") ,#imageLiteral(resourceName: "image1")]
         
         ghostImageView.image = imageArray.randomElement()
+        ghostImageView.backgroundColor = UIColor.clear
     }
 
 }
